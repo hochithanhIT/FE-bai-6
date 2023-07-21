@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập buổi 6</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #92DFC8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section-1 .content {
+            background-color: #CAEFF2;
+            float: left;
+            padding: 20px 0;
+            width: 70%;
+            height: 500px;
+            text-align: center;
+        }
+
+        .section-1 .aside {
+            background-color: #F2D8CA;
+            width: 30%;
+            height: 500px;
+            float: left;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .section-1 .clear {
+            clear: both;
+        }
+
+        .section-2 {
+            margin-top: 10px;
+        }
+
+        .section-2 .box {
+            background-color: #F2F1CA;
+            padding: 20px 0;
+            margin-right: 10px;
+            width: calc(25% - 30px/4);
+            float: left;
+            text-align: center;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .section-2 .box:nth-child(4) {
+            margin-right: 0;
+        }
+
+        .section-2 .clear {
+            clear: both;
+        }
+
+        .footer {
+            background-color: #EECBF3;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .test {
+            background-color: #92DFC8;
+            width: 500px;
+            height: 50px;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px){
+            .section-1 .content {
+                width: 100%;
+            }
+
+            .section-1 .aside {
+                width: 100%;
+            }
+
+            .section-2 .box:nth-child(2) {
+                margin-right: 0;
+            }
+
+            .section-2 {
+                padding: 0 10px;
+            }
+
+            .section-2 .box {
+                width: calc(50% - 5px);
+                margin-right: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .section-2 {
+                padding: 0;
+            }
+            
+            .section-2 .box {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        HEADER
+    </header>
+    <section class="section-1">
+        <div class="content">CONTENT</div>
+        <div class="aside">ASIDE</div>
+        <div class="clear"></div>
+    </section>
+    <section class="section-2">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="clear"></div>
+    </section>
+    <footer class="footer">
+        FOOTER
+    </footer>
+</body>
+</html>
